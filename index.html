@@ -27,7 +27,7 @@
 
   <!--Camera end-->
 
-    <script src="js/photo.js"></script>;
+    <script src="js/photo.js"></script>
    <script type="text/javascript">
     function processImage() {
         var subscriptionKey = "8d8b0459c9ee4b76b9fe5f61d4da8f43";
@@ -40,7 +40,7 @@
         };
 
         // Display the image.
-        var sourceImageUrl = document.getElementById("photo").value;
+        var sourceImageUrl = document.getElementById("canvas").value;
         document.querySelector("#sourceImage").src = sourceImageUrl;
 
         // Perform the REST API call.
