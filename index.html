@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <nav>
+ <nav>
     <a href="about.html">About Us</a>
-  </nav>
+ </nav>
   <div class="photobooth">
         test
       </div>
@@ -54,7 +54,7 @@
         .fail(function(jqXHR, textStatus, errorThrown) {
             // Display error message.
             var errorString = (errorThrown === "") ? "Error. " : errorThrown + " (" + jqXHR.status + "): ";
-            errorString += (jqXHR.responseText === "") ? "" : (jQuery.parseJSON(jqXHR.responseText).message) ?
+            errorString += (jqXHR.responseText === "") ? "" : (jQuery.parseJSON(jqXHR.responseText).message) ? 
                 jQuery.parseJSON(jqXHR.responseText).message : jQuery.parseJSON(jqXHR.responseText).error.message;
             alert(errorString);
         });
@@ -64,6 +64,7 @@
 <h1>Less Face It</h1>
 Relax, smile, and say cheese. We'll handle the rest.
 <br><br>
+<!-- Image to analyze will be replaced with a camera that can take a photo and identify a face. -->
 Image to analyze: <input type="text" name="inputImage" id="inputImage" value="https://upload.wikimedia.org/wikipedia/commons/c/c3/RH_Louise_Lillian_Gish.jpg" />
 <button onclick="processImage()">Analyze face</button>
 <br><br>
