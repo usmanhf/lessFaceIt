@@ -27,7 +27,7 @@
 
   <!--Camera end-->
 
-    <script src="js/photo.js"></script>
+    <script src="js/photo.js"></script>;
    <script type="text/javascript">
     function processImage() {
         var subscriptionKey = "8d8b0459c9ee4b76b9fe5f61d4da8f43";
@@ -40,7 +40,7 @@
         };
 
         // Display the image.
-        var sourceImageUrl = document.getElementById("inputImage").value;
+        var sourceImageUrl = document.getElementById("photo").value;
         document.querySelector("#sourceImage").src = sourceImageUrl;
 
         // Perform the REST API call.
@@ -75,7 +75,7 @@
     </script>
 
 <!-- Image to analyze will be replaced with a camera that can take a photo and identify a face. -->
-<h3>Image to analyze: <input type="text" name="inputImage" id="inputImage" value="https://upload.wikimedia.org/wikipedia/commons/c/c3/RH_Louise_Lillian_Gish.jpg" />
+<h3>Image to analyze: <input type="text" name="inputImage" id="inputImage" value="http://lessfaceit.com/placeholder.png" />
 <button class="button" onclick="processImage()">Analyze face</button></h3>
 
 <br>
