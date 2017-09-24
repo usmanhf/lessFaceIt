@@ -16,10 +16,13 @@ h2 {
   text-align: center;
 }
 p {
-  color: grey;
+  color: white;
   font-family: Geneva;
   width: 850px;
   margin: 0 auto;
   padding-bottom: 20px;
   text-align: center;
+}
+body {
+  background-image: url(https://i.imgur.com/Nbi7bYI.jpg);
 }
