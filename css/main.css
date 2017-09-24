@@ -4,3 +4,24 @@
   border:10px solid #ddd;
   margin:0 auto;
 }
+a.link{
+  font-family: Geneva;
+  float: right;
+}
+h1{
+  font-family: Geneva;
+  color: red;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+body{
+  font-family: Geneva;
+  color: white;
+  background-image: url(https://i.imgur.com/Nbi7bYI.jpg);
+}
+h3{
+  font-family: Geneva;
+  text-align: center;
+  color: white;
+}
