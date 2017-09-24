@@ -1,25 +1,31 @@
-//body {
-//  background-color: black;
-//}
+@font-face {
+  font-family: Ikaros;
+  src: url(Ikaros-Regular.otf);
+}
 .title {
-  font-style: bold;
+  font-weight: bold;
   color: red;
   margin-top: 50px;
   text-align: center;
-  font-family: Geneva;
-  font-size: 50px;
-  margin-bottom: 50px;
+  font-family: Ikaros;
+  font-size: 60px;
+  margin-bottom: 45px;
 }
 h2 {
-  font-family: Geneva;
+  font-family: Ikaros;
   color: maroon;
   text-align: center;
+  font-size: 28px;
 }
 p {
-  color: grey;
-  font-family: Geneva;
+  color: white;
+  font-family: Ikaros;
   width: 850px;
   margin: 0 auto;
   padding-bottom: 20px;
   text-align: center;
+  font-size: 18px;
+}
+body {
+  background-image: url(https://i.imgur.com/Nbi7bYI.jpg);
 }

@@ -5,6 +5,11 @@
   margin:0 auto;
 }
 
+@font-face {
+  font-family: Ikaros;
+  src: url(Ikaros-Regular.otf);
+}
+
 .photobooth-capture-button {
   display:block;
   margin:10px 0;
@@ -19,3 +24,47 @@
 #canvas {
   display: none;
 }
+a.link{
+  font-family: Ikaros;
+  float: right;
+}
+h1{
+  font-family: Ikaros;
+  color: red;
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+body{
+  font-family: Ikaros;
+  color: white;
+  background-image: url(https://i.imgur.com/Nbi7bYI.jpg);
+}
+h3{
+  font-family: Ikaros;
+  text-align: center;
+  color: white;
+}
+#jsonOutput{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.button{
+  background-color: #f44336; 
+  color: white; 
+  border: 3px solid #f44336;
+  border-radius: 12px;
+  padding: 3px 24px;
+  font-family: Ikaros;
+  font-size: 14px;
+}
+#inputImage{
+  border: none;
+  border-bottom: 2px solid red;
+  border-radius: 4px;
+  padding: 3px;
+  margin: 8px 0;
+  font-family: Ikaros;
+  font-size: 14px;
+}
+
