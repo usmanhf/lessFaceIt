@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <title>Less Face It</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
@@ -8,14 +8,18 @@
 <body>
  <nav>
     <a href="about.html">About Us</a>
- </nav>
+  </nav>
+  
+  <!--Camera-->
+  
   <div class="photobooth">
-        test
-      </div>
-
-      <script src="js/photo.js"></script>
-      
-<script type="text/javascript">
+    </div>
+      <video id="video" width="400" height="300"></video>
+    <script src="js/photo.js"></script>
+  
+  <!--Camera end-->
+  
+   <script type="text/javascript">
     function processImage() {
         var subscriptionKey = "8d8b0459c9ee4b76b9fe5f61d4da8f43";
         var uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
@@ -59,7 +63,7 @@
             alert(errorString);
         });
     };
-</script>
+    </script>
 
 <h1>Less Face It</h1>
 Relax, smile, and say cheese. We'll handle the rest.
@@ -67,6 +71,7 @@ Relax, smile, and say cheese. We'll handle the rest.
 <!-- Image to analyze will be replaced with a camera that can take a photo and identify a face. -->
 Image to analyze: <input type="text" name="inputImage" id="inputImage" value="https://upload.wikimedia.org/wikipedia/commons/c/c3/RH_Louise_Lillian_Gish.jpg" />
 <button onclick="processImage()">Analyze face</button>
+
 <br><br>
 <div id="wrapper" style="width:1020px; display:table;">
     <div id="jsonOutput" style="width:600px; display:table-cell;">
