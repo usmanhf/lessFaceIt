@@ -25,3 +25,7 @@ h3{
   text-align: center;
   color: white;
 }
+#jsonOutput{
+  padding-left: 70px;
+  padding-right: 70px;
+}
