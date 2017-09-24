@@ -1,6 +1,21 @@
 .photobooth {
-  width:400px
-  background-colo:#ccc;
+  width:1280px;
+  background-color: #ccc;
   border:10px solid #ddd;
   margin:0 auto;
+}
+
+.photobooth-capture-button {
+  display:block;
+  margin:10px 0;
+  padding:10px 20px;
+  background-color: cornflowerblue;
+  color:#fff;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+#canvas {
+  display: none;
 }

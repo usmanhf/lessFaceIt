@@ -9,16 +9,19 @@
   <nav>
     <a href="about.html">About Us</a>
   </nav>
-  
+
   <!--Camera-->
-  
+
   <div class="photobooth">
+      <video id="video" width="1280" height="720"></video>
+      <a href="#" id="capture" class="photobooth-capture-button">Take photo</a>
+      <canvas id="canvas" width="1280" height="720"></canvas>
+      <img id="photo" src="placeholder.png" alt="Photo of you">
     </div>
-      <video id="video" width="400" height="300"></video>
-    <script src="js/photo.js"></script>
-  
+
   <!--Camera end-->
-  
+
+    <script src="js/photo.js"></script>
    <script type="text/javascript">
     function processImage() {
         var subscriptionKey = "8d8b0459c9ee4b76b9fe5f61d4da8f43";
