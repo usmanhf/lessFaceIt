@@ -1,12 +1,27 @@
 .photobooth {
-  width:400px
-  background-colo:#ccc;
+  width:1280px;
+  background-color: #ccc;
   border:10px solid #ddd;
   margin:0 auto;
 }
+
 @font-face {
   font-family: Ikaros;
   src: url(Ikaros-Regular.otf);
+
+.photobooth-capture-button {
+  display:block;
+  margin:10px 0;
+  padding:10px 20px;
+  background-color: cornflowerblue;
+  color:#fff;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+#canvas {
+  display: none;
 }
 a.link{
   font-family: Ikaros;
@@ -51,3 +66,4 @@ h3{
   font-family: Ikaros;
   font-size: 14px;
 }
+
