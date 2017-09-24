@@ -8,6 +8,7 @@
 @font-face {
   font-family: Ikaros;
   src: url(Ikaros-Regular.otf);
+}
 
 .photobooth-capture-button {
   display:block;
