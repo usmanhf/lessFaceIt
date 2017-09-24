@@ -1,34 +1,28 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <title>Less Face It</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <nav>
+ <nav>
     <a href="about.html">About Us</a>
   </nav>
+  
+  <!--Camera-->
+  
   <div class="photobooth">
-        test
-      </div>
-
-      <script src="js/photo.js"></script>
-
-<script type="text/javascript">
+    </div>
+      <video id="video" width="400" height="300"></video>
+    <script src="js/photo.js"></script>
+  
+  <!--Camera end-->
+  
+   <script type="text/javascript">
     function processImage() {
         var subscriptionKey = "8d8b0459c9ee4b76b9fe5f61d4da8f43";
-
-        // Replace or verify the region.
-        //
-        // You must use the same region in your REST API call as you used to obtain your subscription keys.
-        // For example, if you obtained your subscription keys from the westus region, replace
-        // "westcentralus" in the URI below with "westus".
-        //
-        // NOTE: Free trial subscription keys are generated in the westcentralus region, so if you are using
-        // a free trial subscription key, you should not need to change this region.
         var uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
-
         // Request parameters.
         var params = {
             "returnFaceId": "true",
@@ -64,18 +58,20 @@
         .fail(function(jqXHR, textStatus, errorThrown) {
             // Display error message.
             var errorString = (errorThrown === "") ? "Error. " : errorThrown + " (" + jqXHR.status + "): ";
-            errorString += (jqXHR.responseText === "") ? "" : (jQuery.parseJSON(jqXHR.responseText).message) ?
+            errorString += (jqXHR.responseText === "") ? "" : (jQuery.parseJSON(jqXHR.responseText).message) ? 
                 jQuery.parseJSON(jqXHR.responseText).message : jQuery.parseJSON(jqXHR.responseText).error.message;
             alert(errorString);
         });
     };
-</script>
+    </script>
 
-<h1>Detect Faces:</h1>
-Enter the URL to an image that includes a face or faces, then click the <strong>Analyze face</strong> button.
+<h1>Less Face It</h1>
+Relax, smile, and say cheese. We'll handle the rest.
 <br><br>
+<!-- Image to analyze will be replaced with a camera that can take a photo and identify a face. -->
 Image to analyze: <input type="text" name="inputImage" id="inputImage" value="https://upload.wikimedia.org/wikipedia/commons/c/c3/RH_Louise_Lillian_Gish.jpg" />
 <button onclick="processImage()">Analyze face</button>
+
 <br><br>
 <div id="wrapper" style="width:1020px; display:table;">
     <div id="jsonOutput" style="width:600px; display:table-cell;">
