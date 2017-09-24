@@ -19,3 +19,47 @@
 #canvas {
   display: none;
 }
+a.link{
+  font-family: Arial;
+  float: right;
+}
+h1{
+  font-family: Arial;
+  color: red;
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+body{
+  font-family: Arial;
+  color: white;
+  background-image: url(https://i.imgur.com/Nbi7bYI.jpg);
+}
+h3{
+  font-family: Arial;
+  text-align: center;
+  color: white;
+}
+#jsonOutput{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.button{
+  background-color: #f44336; 
+  color: white; 
+  border: 3px solid #f44336;
+  border-radius: 12px;
+  padding: 3px 24px;
+  font-family: Arial;
+  font-size: 14px;
+}
+#inputImage{
+  border: none;
+  border-bottom: 2px solid red;
+  border-radius: 4px;
+  padding: 3px;
+  margin: 8px 0;
+  font-family: Arial;
+  font-size: 14px;
+}
+
